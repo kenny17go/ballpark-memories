@@ -75,3 +75,6 @@
 
 /* V0.7.1 clean story presentation: curation controls live in All Memories */
 .moment-card .book-remove{display:none}
+
+/* V0.7.2 game-aware photo picker */
+.photo-pick-hint{display:grid;gap:3px;margin:-10px 2px 12px;padding:11px 13px;border-radius:14px;background:#fff;color:#183f2c}.photo-pick-hint b{font-size:13px}.photo-pick-hint span{font-size:11px;line-height:1.45;color:#707a74}
