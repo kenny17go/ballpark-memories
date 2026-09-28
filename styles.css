@@ -110,3 +110,7 @@
 
 /* V0.9.4 ballpark photo covers */
 .ballpark-memory{grid-template-columns:52px 1fr auto}.ballpark-cover{width:52px;height:42px;display:grid;place-items:center;border-radius:11px;background:#fff center/cover no-repeat;overflow:hidden}.ballpark-cover i{font-style:normal;font-size:15px}.ballpark-memory.has-cover .ballpark-cover i{display:none}.ballpark-memory.has-cover .ballpark-cover{box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
+
+
+/* V0.9.5 ballpark memory hero */
+.ballpark-hero{height:190px;margin:0 0 14px;border-radius:22px;background:#e9e8df center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;overflow:hidden;color:#183f2c}.ballpark-hero>span{font-size:34px}.ballpark-hero small{font-size:9px;font-weight:900;letter-spacing:.13em}.ballpark-hero.has-photo{align-items:flex-start;justify-content:flex-end;padding:18px;color:#fff}.ballpark-hero.has-photo b{font-size:23px;line-height:1.1;text-shadow:0 1px 8px rgba(0,0,0,.25)}
