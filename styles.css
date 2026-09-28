@@ -98,3 +98,7 @@
 
 /* V0.9.1 richer home game cards */
 .home-score-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:5px}.game.team-game .home-score-row>p{margin-top:0}.home-game-meta{display:flex;align-items:center;gap:7px;min-width:0}.home-game-meta>span{font-size:9px;font-weight:900;letter-spacing:.08em;color:#68736c}.home-game-meta>small{font-size:11px;font-weight:750;color:#68736c;white-space:normal;line-height:1.35}@media(max-width:390px){.home-game-meta{flex-basis:100%;margin-top:1px}}
+
+
+/* V0.9.2 season footprint */
+.season-footprint{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}.season-footprint:empty{display:none}.season-footprint>div{display:grid;gap:4px;padding:11px 12px;border-radius:14px;background:#f7f7f3;min-width:0}.season-footprint small{font-size:9px;font-weight:900;color:#7b847e;letter-spacing:.04em}.season-footprint b{font-size:11px;line-height:1.45;color:#183f2c;overflow-wrap:anywhere}@media(max-width:390px){.season-footprint{grid-template-columns:1fr}}
