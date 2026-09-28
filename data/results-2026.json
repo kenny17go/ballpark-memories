@@ -9,5 +9,25 @@
     "savePitcher": "張奕",
     "resultSource": "CPBL official",
     "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-A-344"
+  },
+  "2026-A-343": {
+    "status": "FINISHED",
+    "awayScore": "1",
+    "homeScore": "2",
+    "mvp": "曾頌恩",
+    "winningPitcher": "余謙",
+    "losingPitcher": "陳冠偉",
+    "resultSource": "CPBL official",
+    "resultSourceUrl": "https://cpbl.com.tw/xmdoc/cont?sid=0Q263688284022228808"
+  },
+  "2026-A-345": {
+    "status": "FINISHED",
+    "awayScore": "1",
+    "homeScore": "10",
+    "mvp": "余德龍",
+    "winningPitcher": "林子崴",
+    "losingPitcher": "艾速特",
+    "resultSource": "CPBL official",
+    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-A-345"
   }
 }
