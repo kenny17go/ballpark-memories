@@ -116,7 +116,7 @@ for g in candidates:
         "status":"FINISHED","awayScore":int(away_score),"homeScore":int(home_score),
         "resultSource":"CPBL official","resultSourceUrl":f"{BASE}/box/index?year={today.year}&kindCode=A&gameSno={sno}"
     })
-    mapping={"MvpName":"mvp","WinningPitcherName":"winningPitcher","LoserPitcherName":"losingPitcher","CloserName":"savePitcher"}
+    mapping={"MvpName":"mvp","WinningPitcherName":"winningPitcher","LoserPitcherName":"losingPitcher"}
     for src,dst in mapping.items():
         if x.get(src):row[dst]=x[src]
         else:row.pop(dst,None)
@@ -128,6 +128,11 @@ for g in candidates:
         box=api_post("/box/getlive",{"GameSno":str(sno),"KindCode":"A","Year":str(today.year),
              "PrevOrNext":"","PresentStatus":""},token)
         curt=json.loads(box.get("CurtGameDetailJson") or "{}") if box.get("Success") else {}
+        # Schedule CloserName can mean the last pitcher, not a credited save.
+        # Box detail exposes the official credited closer; use only this for savePitcher.
+        closer=curt.get("CloserPitcherName")
+        if closer: row["savePitcher"]=closer
+        else: row.pop("savePitcher",None)
         audience=curt.get("AudienceCntBackend") or curt.get("AudienceCnt")
         if audience not in (None,""):
             row["attendance"]=int(str(audience).replace(",",""))
