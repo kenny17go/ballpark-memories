@@ -26,3 +26,8 @@
 .timeline-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
 .media-time{position:absolute;left:4px;bottom:4px;padding:2px 5px;border-radius:7px;background:rgba(15,20,17,.7);color:#fff;font-size:9px;font-weight:700}
 @media (min-width:700px){.timeline-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}}
+
+/* V0.5.0 official result presentation */
+.game-result-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:12px}
+.game-result-meta span{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.14)}
+.game-result-meta b{font-weight:700;color:#dfe8e2}
