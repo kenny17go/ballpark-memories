@@ -1,1 +1,2 @@
 const KEY="ballpark-memories-v2";export function loadGames(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch{return[]}}export function saveGames(g){localStorage.setItem(KEY,JSON.stringify(g))}export function addMediaMeta(gameId,items){const games=loadGames(),g=games.find(x=>x.id===gameId);if(!g)return;g.media=[...(g.media||[]),...items];saveGames(games)}
+export function deleteMediaMeta(gameId,mediaId){const games=loadGames(),g=games.find(x=>x.id===gameId);if(!g)return;g.media=(g.media||[]).filter(m=>m.id!==mediaId);saveGames(games)}
