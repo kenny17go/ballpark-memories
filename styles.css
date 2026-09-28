@@ -53,5 +53,8 @@
 .curating{padding:28px;text-align:center;background:#fff;border-radius:20px;color:#6f7973;font-size:13px;font-weight:800}
 
 /* V0.6.2 manual control layer */
-.story-actions{display:grid;grid-template-columns:1fr auto;gap:8px}.time-settings,#saveTimeBtn{border:0;border-radius:16px;padding:0 15px;background:#fff;color:#183f2c;font-weight:800}.dialog-note{color:#68736c;line-height:1.5;font-size:13px}.media-edit{position:absolute;left:4px;top:4px;z-index:3;border:0;border-radius:999px;background:rgba(20,28,23,.78);color:#fff;font-size:12px;font-weight:900;padding:3px 7px;letter-spacing:1px}
+.story-actions{display:grid;grid-template-columns:1fr auto;gap:8px}.time-settings,#saveTimeBtn{border:0;border-radius:16px;padding:0 15px;background:#fff;color:#183f2c;font-weight:800}.dialog-note{color:#68736c;line-height:1.5;font-size:13px}
 #saveTimeBtn{width:100%;background:#183f2c;color:#fff;padding:14px}
+
+/* V0.6.3 direct touch controls */
+.heart-media{position:absolute;left:4px;top:4px;z-index:4;width:28px;height:28px;border:0;border-radius:50%;background:rgba(20,28,23,.72);color:#fff;font-size:20px;line-height:26px;padding:0}.heart-media.on{background:#fff;color:#d92f4b}.saved-media.dragging{z-index:8;opacity:.82;box-shadow:0 8px 20px rgba(0,0,0,.25)}.timeline-group.drop-ready{outline:2px dashed rgba(24,63,44,.25);outline-offset:5px;border-radius:12px}.timeline-group.drop-hover{outline:3px solid #183f2c;background:rgba(24,63,44,.06)}.timeline-group{transition:background .15s,outline-color .15s}
