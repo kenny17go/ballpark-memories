@@ -20,6 +20,26 @@ def pick(pattern,s):
     m=re.search(pattern,s,re.I)
     return m.group(1).strip() if m else None
 
+def norm_team(v):
+    v=(v or "").replace("7-ELEVEn","").replace("7-ELEVEN","")
+    return re.sub(r"[^\w\u4e00-\u9fff]","",v).replace("悍將","").replace("雄鷹","").replace("桃猿","").replace("兄弟","").replace("龍","").replace("獅","")
+
+def zxc22_attendance(game, sno):
+    # zxc22 exposes recent per-team game rows with game number/date/teams/score/attendance.
+    # Search all six team pages, then require game no + date + both teams before accepting.
+    want_date=(game.get("date") or "").replace("-","/")
+    away=norm_team(game.get("away")); home=norm_team(game.get("home"))
+    for team in range(1,7):
+        page=text(get(f"https://zxc22.idv.tw/last10.asp?team={team}"))
+        m=re.search(rf"\b0*{int(sno)}\b\s+{re.escape(want_date)}\s+.*?(\d{{3,6}})\s+(?:勝|敗|和)",page)
+        if not m: continue
+        # Validate the matched row vicinity, not game number alone.
+        pos=m.start(); vicinity=page[pos:pos+500]
+        if away and away not in norm_team(vicinity): continue
+        if home and home not in norm_team(vicinity): continue
+        return int(m.group(1)), f"https://zxc22.idv.tw/last10.asp?team={team}"
+    return None,None
+
 schedule=json.loads(SCHEDULE.read_text(encoding="utf-8"))
 results=json.loads(RESULTS.read_text(encoding="utf-8")) if RESULTS.exists() else {}
 today=date.today().isoformat()
@@ -44,8 +64,20 @@ for g in schedule:
             news=text(get(f"https://cpbl.com.tw/box/news?gameSno={int(sno)}&kindCode=A&year=2026"))
             m=re.search(r"(?:吸引|湧入|進場|入場)[^。]{0,35}?([\d,]{3,6})\s*人",news)
             if not m: m=re.search(r"([\d,]{3,6})\s*人(?:進場|入場)",news)
-            if m: row["attendance"]=int(m.group(1).replace(",",""))
+            if m:
+                row["attendance"]=int(m.group(1).replace(",",""))
+                row["attendanceSource"]="CPBL official"
+                row["attendanceSourceUrl"]=f"https://cpbl.com.tw/box/news?gameSno={int(sno)}&kindCode=A&year=2026"
         except Exception: pass
+        if not row.get("attendance") or row.get("attendanceSource")!="CPBL official":
+            try:
+                attendance,source=zxc22_attendance(g,sno)
+                if attendance:
+                    row["attendance"]=attendance
+                    row["attendanceSource"]="zxc22"
+                    row["attendanceSourceUrl"]=source
+            except Exception as e:
+                print(gid,"zxc22 attendance skip:",e)
         if row!=results.get(gid):
             results[gid]=row;changed+=1
     except Exception as e:
