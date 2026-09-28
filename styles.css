@@ -16,3 +16,13 @@
 .viewer-count{position:absolute;z-index:2;top:calc(24px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);color:white;font-size:13px;font-weight:700}
 .viewer-nav{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:44px;height:64px;border:0;background:transparent;color:rgba(255,255,255,.8);font-size:48px}.viewer-prev{left:0}.viewer-next{right:0}
 .viewer-loading{color:#aeb5b0;font-size:14px;text-align:center}.viewer-open{overflow:hidden}
+
+/* V0.4.0 Game Story timeline */
+.media-grid{display:block}
+.timeline-group{margin:0 0 22px}
+.timeline-label{display:grid;grid-template-columns:10px auto 1fr;align-items:center;gap:8px;margin:0 2px 9px;color:#183f2c}
+.timeline-label>span{width:8px;height:8px;border-radius:50%;background:currentColor}
+.timeline-label b{font-size:14px}.timeline-label small{text-align:right;color:#7b847e;font-size:11px}
+.timeline-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.media-time{position:absolute;left:4px;bottom:4px;padding:2px 5px;border-radius:7px;background:rgba(15,20,17,.7);color:#fff;font-size:9px;font-weight:700}
+@media (min-width:700px){.timeline-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}}
