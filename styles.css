@@ -31,3 +31,11 @@
 .game-result-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:12px}
 .game-result-meta span{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.14)}
 .game-result-meta b{font-weight:700;color:#dfe8e2}
+
+/* V0.5.3 home-team score themes */
+.game.team-game{position:relative;overflow:hidden}
+.game.team-game::before{content:"";position:absolute;inset:0 auto 0 0;width:7px;background:var(--team-bg)}
+.game.team-game p{display:inline-block;margin-top:5px;padding:6px 10px;border-radius:10px;background:var(--team-bg);color:var(--team-fg);font-weight:900}
+.story #storyHead{background:var(--team-bg,#183f2c);color:var(--team-fg,#fff)}
+.story #storyHead .eyebrow{color:inherit;opacity:.7}
+.story #storyHead .game-result-meta b{color:inherit}
