@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json,re,urllib.request,urllib.parse,http.cookiejar
-from datetime import date,timedelta
+from datetime import date
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -72,13 +72,13 @@ def zxc22_attendance(game,sno):
 schedule=json.loads(SCHEDULE.read_text(encoding="utf-8"))
 results=json.loads(RESULTS.read_text(encoding="utf-8")) if RESULTS.exists() else {}
 today=date.today()
-window_start=(today-timedelta(days=4)).isoformat()
 today_iso=today.isoformat()
+# Keep a complete season result cache so old attended games can be added later.
 candidates=[g for g in schedule if str(g.get("id","")).startswith("2026-A-")
-            and window_start<=g.get("date","")<=today_iso]
-if len(candidates)>24:
-    raise RuntimeError(f"safety stop: unexpected candidate window of {len(candidates)} games")
-print(f"checking {len(candidates)} recent games ({window_start}..{today_iso})")
+            and g.get("date","")<=today_iso]
+if len(candidates)>400:
+    raise RuntimeError(f"safety stop: unexpected season candidate count of {len(candidates)} games")
+print(f"checking {len(candidates)} season games through {today_iso}")
 
 token=csrf()
 payload=api_post("/schedule/getgamedatas",{
