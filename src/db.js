@@ -1,0 +1,1 @@
+const KEY="ballpark-memories-v1";export function loadGames(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch{return[]}}export function saveGames(games){localStorage.setItem(KEY,JSON.stringify(games))}
