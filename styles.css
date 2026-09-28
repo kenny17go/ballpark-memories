@@ -58,3 +58,6 @@
 
 /* V0.6.3 direct touch controls */
 .heart-media{position:absolute;left:4px;top:4px;z-index:4;width:28px;height:28px;border:0;border-radius:50%;background:rgba(20,28,23,.72);color:#fff;font-size:20px;line-height:26px;padding:0}.heart-media.on{background:#fff;color:#d92f4b}.saved-media.dragging{z-index:8;opacity:.82;box-shadow:0 8px 20px rgba(0,0,0,.25)}.timeline-group.drop-ready{outline:2px dashed rgba(24,63,44,.25);outline-offset:5px;border-radius:12px}.timeline-group.drop-hover{outline:3px solid #183f2c;background:rgba(24,63,44,.06)}.timeline-group{transition:background .15s,outline-color .15s}
+
+/* V0.6.4 game-time visibility + curated removal */
+.game-time-summary{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.game-time-summary span{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.16);font-size:11px;font-weight:800}.official-start{margin:18px 0 4px;padding:14px;border-radius:14px;background:#f0f2ef;display:flex;justify-content:space-between}.book-photo{position:relative}.book-remove{position:absolute;z-index:5;top:10px;right:10px;width:34px;height:34px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#d92f4b;font-size:22px;box-shadow:0 2px 9px rgba(0,0,0,.14)}
