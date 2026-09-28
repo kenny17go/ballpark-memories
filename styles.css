@@ -51,3 +51,7 @@
 
 /* V0.6.1 local curation engine */
 .curating{padding:28px;text-align:center;background:#fff;border-radius:20px;color:#6f7973;font-size:13px;font-weight:800}
+
+/* V0.6.2 manual control layer */
+.story-actions{display:grid;grid-template-columns:1fr auto;gap:8px}.time-settings,#saveTimeBtn{border:0;border-radius:16px;padding:0 15px;background:#fff;color:#183f2c;font-weight:800}.dialog-note{color:#68736c;line-height:1.5;font-size:13px}.media-edit{position:absolute;left:4px;top:4px;z-index:3;border:0;border-radius:999px;background:rgba(20,28,23,.78);color:#fff;font-size:12px;font-weight:900;padding:3px 7px;letter-spacing:1px}
+#saveTimeBtn{width:100%;background:#183f2c;color:#fff;padding:14px}
