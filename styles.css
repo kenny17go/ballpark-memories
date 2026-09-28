@@ -39,3 +39,12 @@
 .story #storyHead{background:var(--team-bg,#183f2c);color:var(--team-fg,#fff)}
 .story #storyHead .eyebrow{color:inherit;opacity:.7}
 .story #storyHead .game-result-meta b{color:inherit}
+
+/* V0.6.0 curated Game Story book */
+.story-tabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#e8e8e1;padding:4px;border-radius:14px;margin:4px 0 18px}
+.story-tab{border:0;background:transparent;border-radius:11px;padding:10px;font:inherit;font-size:13px;font-weight:800;color:#69736d}
+.story-tab.active{background:#fff;color:#183f2c;box-shadow:0 1px 5px rgba(0,0,0,.07)}
+.book-intro{padding:6px 2px 18px}.book-intro span{font-size:10px;font-weight:900;letter-spacing:.15em;color:#7b847e}.book-intro h3{font-size:27px;margin:6px 0}.book-intro p{margin:0;color:#737c76;font-size:13px}
+.book-photo{aspect-ratio:auto;border-radius:22px;margin-bottom:14px;background:#fff;overflow:hidden;box-shadow:0 5px 18px rgba(26,43,33,.06)}
+.book-photo .thumb-slot{aspect-ratio:16/10;background:#e5e7e3}.book-photo .thumb-slot img{border-radius:0}.book-photo .book-caption{display:flex;justify-content:space-between;align-items:center;padding:13px 15px}.book-caption b{font-size:14px}.book-caption span{font-size:11px;color:#7b847e}
+.book-final{border-radius:24px;padding:24px;margin:20px 0 8px;background:var(--team-bg);color:var(--team-fg);display:grid;gap:5px}.book-final small{font-size:11px;font-weight:900;letter-spacing:.18em;opacity:.7}.book-final strong{font-size:42px;line-height:1.1}.book-final b{font-size:15px}.book-final span{margin-top:6px;font-size:12px;font-weight:800}
