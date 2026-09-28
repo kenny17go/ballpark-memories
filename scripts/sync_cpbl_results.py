@@ -96,7 +96,9 @@ for g in candidates:
         print(gid,"skip:",e)
 # Safety guard: a normal daily run should never rewrite a large part of the season.
 # Fail closed so a CPBL HTML change cannot corrupt the published data file.
-if changed > 12:
-    raise RuntimeError(f"safety stop: refusing to update {changed} games")
+if changed > len(candidates):
+    raise RuntimeError(f"safety stop: changed {changed} exceeds {len(candidates)} candidates")
+if len(candidates) > 24:
+    raise RuntimeError(f"safety stop: unexpected candidate window of {len(candidates)} games")
 RESULTS.write_text(json.dumps(results,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("updated",changed,"games")
