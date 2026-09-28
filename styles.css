@@ -78,3 +78,6 @@
 
 /* V0.7.2 game-aware photo picker */
 .photo-pick-hint{display:grid;gap:3px;margin:-10px 2px 12px;padding:11px 13px;border-radius:14px;background:#fff;color:#183f2c}.photo-pick-hint b{font-size:13px}.photo-pick-hint span{font-size:11px;line-height:1.45;color:#707a74}
+
+/* V0.7.4 curation reset controls */
+.curation-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:2px 2px 14px;color:#68736c}.curation-tools>span{font-size:12px;font-weight:800}.curation-tools>div{display:flex;gap:6px}.curation-tools button{border:0;border-radius:999px;background:#fff;color:#183f2c;padding:7px 10px;font:inherit;font-size:11px;font-weight:800;box-shadow:0 1px 4px rgba(0,0,0,.05)}
