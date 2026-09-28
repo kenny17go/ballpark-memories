@@ -64,3 +64,6 @@
 
 /* V0.6.5 manually featured videos in story book */
 .book-video .thumb-slot{display:flex;align-items:center;justify-content:center;background:#202722;color:#fff}.book-video .saved-media-icon span{font-size:44px}.book-video .saved-media-icon small{font-size:12px;margin-top:7px}.book-video .saved-media-icon em{font-size:10px;font-style:normal;opacity:.62;margin-top:5px}
+
+/* V0.6.6 photo-only curated story */
+.video-note{position:absolute;left:4px;top:4px;z-index:4;padding:4px 7px;border-radius:999px;background:rgba(20,28,23,.72);color:#fff;font-size:9px;font-weight:800}
