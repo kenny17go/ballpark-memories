@@ -5,3 +5,4 @@ const RESULTS="./data/results-2026.json";
 let resultCache=null;
 async function loadResults(){if(resultCache)return resultCache;try{const r=await fetch(RESULTS,{cache:"no-store"});if(!r.ok)throw Error("results");resultCache=await r.json();return resultCache}catch(e){return{}}}
 export async function getGameResult(id){const all=await loadResults();return all[id]||null}
+export function resultMatchesGame(game,result){if(!game||!result)return false;const same=(a,b)=>String(a||"").trim()===String(b||"").trim();return (!result.date||same(game.date,result.date))&&(!result.away||same(game.away,result.away))&&(!result.home||same(game.home,result.home))&&(!result.venue||same(game.venue,result.venue))}
