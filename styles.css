@@ -48,3 +48,6 @@
 .book-photo{aspect-ratio:auto;border-radius:22px;margin-bottom:14px;background:#fff;overflow:hidden;box-shadow:0 5px 18px rgba(26,43,33,.06)}
 .book-photo .thumb-slot{aspect-ratio:16/10;background:#e5e7e3}.book-photo .thumb-slot img{border-radius:0}.book-photo .book-caption{display:flex;justify-content:space-between;align-items:center;padding:13px 15px}.book-caption b{font-size:14px}.book-caption span{font-size:11px;color:#7b847e}
 .book-final{border-radius:24px;padding:24px;margin:20px 0 8px;background:var(--team-bg);color:var(--team-fg);display:grid;gap:5px}.book-final small{font-size:11px;font-weight:900;letter-spacing:.18em;opacity:.7}.book-final strong{font-size:42px;line-height:1.1}.book-final b{font-size:15px}.book-final span{margin-top:6px;font-size:12px;font-weight:800}
+
+/* V0.6.1 local curation engine */
+.curating{padding:28px;text-align:center;background:#fff;border-radius:20px;color:#6f7973;font-size:13px;font-weight:800}
