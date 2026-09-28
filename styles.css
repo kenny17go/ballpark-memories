@@ -61,3 +61,6 @@
 
 /* V0.6.4 game-time visibility + curated removal */
 .game-time-summary{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.game-time-summary span{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.16);font-size:11px;font-weight:800}.official-start{margin:18px 0 4px;padding:14px;border-radius:14px;background:#f0f2ef;display:flex;justify-content:space-between}.book-photo{position:relative}.book-remove{position:absolute;z-index:5;top:10px;right:10px;width:34px;height:34px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#d92f4b;font-size:22px;box-shadow:0 2px 9px rgba(0,0,0,.14)}
+
+/* V0.6.5 manually featured videos in story book */
+.book-video .thumb-slot{display:flex;align-items:center;justify-content:center;background:#202722;color:#fff}.book-video .saved-media-icon span{font-size:44px}.book-video .saved-media-icon small{font-size:12px;margin-top:7px}.book-video .saved-media-icon em{font-size:10px;font-style:normal;opacity:.62;margin-top:5px}
