@@ -2,6 +2,9 @@ name: Sync CPBL Results
 
 on:
   workflow_dispatch:
+  schedule:
+    # 23:20 Taiwan time (UTC+8), after most evening games finish.
+    - cron: "20 15 * * *"
 
 permissions:
   contents: write
