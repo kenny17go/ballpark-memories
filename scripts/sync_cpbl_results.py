@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json,re,urllib.request
-from datetime import date
+from datetime import date,timedelta
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -42,11 +42,17 @@ def zxc22_attendance(game, sno):
 
 schedule=json.loads(SCHEDULE.read_text(encoding="utf-8"))
 results=json.loads(RESULTS.read_text(encoding="utf-8")) if RESULTS.exists() else {}
-today=date.today().isoformat()
+today=date.today()
+# Incremental sync only: recent games are enough for a daily result updater.
+# Existing historical rows stay untouched; this avoids hundreds of CPBL requests.
+window_start=(today-timedelta(days=4)).isoformat()
+today_iso=today.isoformat()
+candidates=[g for g in schedule if str(g.get("id","")).startswith("2026-A-")
+            and window_start <= g.get("date","") <= today_iso]
+print(f"checking {len(candidates)} recent games ({window_start}..{today_iso})")
 changed=0
-for g in schedule:
+for g in candidates:
     gid=str(g.get("id",""))
-    if not gid.startswith("2026-A-") or g.get("date","9999")>today: continue
     sno=gid.rsplit("-",1)[-1]
     try:
         html=get("https://stats.cpbl.com.tw/schedule/"+gid)
