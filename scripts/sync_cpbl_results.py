@@ -51,12 +51,18 @@ for g in schedule:
     try:
         html=get("https://stats.cpbl.com.tw/schedule/"+gid)
         s=text(html)
-        if "已結束" not in s: continue
+        # Do not trust page-wide "已結束": the schedule page can contain other games.
+        # A finished target game must expose a target-game score and must not say target game is pending.
+        detail=s.split("賽事詳情",1)[-1]
+        if "未開始" in detail[:500] or "比賽準備中" in detail[:500]:
+            continue
+        score=re.search(r"\b(\d{1,2})\s*:\s*(\d{1,2})\b",detail[:1800])
+        if not score:
+            continue
         row=dict(results.get(gid,{}))
         row.update({"date":g.get("date"),"venue":g.get("venue"),"away":g.get("away"),"home":g.get("home"),"status":"FINISHED",
                     "resultSource":"CPBL official","resultSourceUrl":"https://stats.cpbl.com.tw/schedule/"+gid})
-        score=re.search(r"\b(\d+)\s*:\s*(\d+)\b",s)
-        if score: row["awayScore"],row["homeScore"]=score.group(1),score.group(2)
+        row["awayScore"],row["homeScore"]=int(score.group(1)),int(score.group(2))
         for key,label in [("mvp","MVP"),("winningPitcher","勝投"),("losingPitcher","敗投"),("savePitcher","救援成功")]:
             v=pick(label+r"\s*(?:[^#\d]{0,30}#\d+\s*)?([^\s]+)",s)
             if v: row[key]=v
@@ -82,5 +88,9 @@ for g in schedule:
             results[gid]=row;changed+=1
     except Exception as e:
         print(gid,"skip:",e)
+# Safety guard: a normal daily run should never rewrite a large part of the season.
+# Fail closed so a CPBL HTML change cannot corrupt the published data file.
+if changed > 12:
+    raise RuntimeError(f"safety stop: refusing to update {changed} games")
 RESULTS.write_text(json.dumps(results,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("updated",changed,"games")
