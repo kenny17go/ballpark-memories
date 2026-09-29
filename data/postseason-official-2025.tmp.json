@@ -1,0 +1,227 @@
+{
+  "2025-E-1": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 13124,
+      "AudienceCnt": 13124,
+      "CloserPitcherName": "陳韻文",
+      "WinningPitcherName": "獅帝芬",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "024400"
+    }
+  },
+  "2025-E-2": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 18000,
+      "AudienceCnt": 18000,
+      "CloserPitcherName": "",
+      "WinningPitcherName": "朱承洋",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "032300"
+    }
+  },
+  "2025-E-3": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 11102,
+      "AudienceCnt": 11102,
+      "CloserPitcherName": "",
+      "WinningPitcherName": "黃子鵬",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "031100"
+    }
+  },
+  "2025-E-4": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 8258,
+      "AudienceCnt": 8258,
+      "CloserPitcherName": "",
+      "WinningPitcherName": "威能帝",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "031200"
+    }
+  },
+  "2025-C-1": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 40000,
+      "AudienceCnt": 40000,
+      "CloserPitcherName": "朱承洋",
+      "WinningPitcherName": "魔神樂",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "023400"
+    }
+  },
+  "2025-C-2": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 40000,
+      "AudienceCnt": 40000,
+      "CloserPitcherName": "朱承洋",
+      "WinningPitcherName": "威能帝",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "025400"
+    }
+  },
+  "2025-C-3": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 37088,
+      "AudienceCnt": 37088,
+      "CloserPitcherName": "李振昌",
+      "WinningPitcherName": "韋禮加",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "023700"
+    }
+  },
+  "2025-C-4": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 18000,
+      "AudienceCnt": 18000,
+      "CloserPitcherName": "朱承洋",
+      "WinningPitcherName": "陳冠宇",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "024300"
+    }
+  },
+  "2025-C-5": {
+    "schedule": {
+      "GameDate": null,
+      "GameDateTimeS": null,
+      "GameDateTimeE": null,
+      "FieldAbbe": null,
+      "VisitingTeamName": null,
+      "HomeTeamName": null,
+      "VisitingScore": null,
+      "HomeScore": null,
+      "GameDuringTime": null,
+      "WinningPitcherName": null,
+      "LoserPitcherName": null,
+      "MvpName": null
+    },
+    "box": {
+      "AudienceCntBackend": 18307,
+      "AudienceCnt": 18307,
+      "CloserPitcherName": "朱承洋",
+      "WinningPitcherName": "莊昕諺",
+      "LoserPitcherName": null,
+      "MvpName": null,
+      "GameDuringTime": "040500"
+    }
+  }
+}
