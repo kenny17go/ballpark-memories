@@ -11,7 +11,8 @@
     "homeScore": 2,
     "gameType": "季後挑戰賽",
     "seriesGame": 1,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "林佳緯"
   },
   {
     "id": "2025-E-2",
@@ -25,7 +26,8 @@
     "homeScore": 7,
     "gameType": "季後挑戰賽",
     "seriesGame": 2,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "宋嘉翔"
   },
   {
     "id": "2025-E-3",
@@ -39,7 +41,8 @@
     "homeScore": 3,
     "gameType": "季後挑戰賽",
     "seriesGame": 3,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "林子偉"
   },
   {
     "id": "2025-E-4",
@@ -53,7 +56,8 @@
     "homeScore": 3,
     "gameType": "季後挑戰賽",
     "seriesGame": 4,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "林智平"
   },
   {
     "id": "2025-C-1",
@@ -67,7 +71,8 @@
     "homeScore": 0,
     "gameType": "台灣大賽",
     "seriesGame": 1,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "魔神樂"
   },
   {
     "id": "2025-C-2",
@@ -81,7 +86,8 @@
     "homeScore": 1,
     "gameType": "台灣大賽",
     "seriesGame": 2,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "威能帝"
   },
   {
     "id": "2025-C-3",
@@ -95,7 +101,8 @@
     "homeScore": 0,
     "gameType": "台灣大賽",
     "seriesGame": 3,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "韋禮加"
   },
   {
     "id": "2025-C-4",
@@ -109,12 +116,13 @@
     "homeScore": 3,
     "gameType": "台灣大賽",
     "seriesGame": 4,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "陳晨威"
   },
   {
     "id": "2025-C-5",
-    "date": "2025-10-28",
-    "start": "2025-10-28T18:35:00",
+    "date": "2025-10-27",
+    "start": "2025-10-27T18:35:00",
     "venue": "洲際",
     "away": "樂天桃猿",
     "home": "中信兄弟",
@@ -123,6 +131,7 @@
     "homeScore": 7,
     "gameType": "台灣大賽",
     "seriesGame": 5,
-    "source": "CPBL official"
+    "source": "CPBL official",
+    "mvp": "林泓育"
   }
 ]
