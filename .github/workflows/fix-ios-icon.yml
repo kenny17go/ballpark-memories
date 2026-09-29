@@ -19,7 +19,7 @@ jobs:
         run: |
           python - <<'PY'
           from PIL import Image
-          src = Image.open("icon-192.png").convert("RGB")
+          src = Image.open("icon-512.png").convert("RGB")
           for out, size in [("apple-touch-icon.png",180),("icon-192.png",192),("icon-512.png",512)]:
               im = src.resize((size,size), Image.Resampling.LANCZOS)
               im.save(out, "PNG", optimize=True)
