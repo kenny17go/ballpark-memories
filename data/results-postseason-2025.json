@@ -1,0 +1,110 @@
+{
+  "2025-E-1": {
+    "date": "2025-10-10",
+    "venue": "澄清湖",
+    "away": "樂天桃猿",
+    "home": "統一7-ELEVEn獅",
+    "status": "FINISHED",
+    "awayScore": 1,
+    "homeScore": 2,
+    "gameType": "季後挑戰賽",
+    "seriesGame": 1,
+    "resultSource": "CPBL official"
+  },
+  "2025-E-2": {
+    "date": "2025-10-11",
+    "venue": "樂天桃園",
+    "away": "統一7-ELEVEn獅",
+    "home": "樂天桃猿",
+    "status": "FINISHED",
+    "awayScore": 6,
+    "homeScore": 7,
+    "gameType": "季後挑戰賽",
+    "seriesGame": 2,
+    "resultSource": "CPBL official"
+  },
+  "2025-E-3": {
+    "date": "2025-10-12",
+    "venue": "澄清湖",
+    "away": "樂天桃猿",
+    "home": "統一7-ELEVEn獅",
+    "status": "FINISHED",
+    "awayScore": 9,
+    "homeScore": 3,
+    "gameType": "季後挑戰賽",
+    "seriesGame": 3,
+    "resultSource": "CPBL official"
+  },
+  "2025-E-4": {
+    "date": "2025-10-13",
+    "venue": "澄清湖",
+    "away": "樂天桃猿",
+    "home": "統一7-ELEVEn獅",
+    "status": "FINISHED",
+    "awayScore": 4,
+    "homeScore": 3,
+    "gameType": "季後挑戰賽",
+    "seriesGame": 4,
+    "resultSource": "CPBL official"
+  },
+  "2025-C-1": {
+    "date": "2025-10-18",
+    "venue": "臺北大巨蛋",
+    "away": "樂天桃猿",
+    "home": "中信兄弟",
+    "status": "FINISHED",
+    "awayScore": 3,
+    "homeScore": 0,
+    "gameType": "台灣大賽",
+    "seriesGame": 1,
+    "resultSource": "CPBL official"
+  },
+  "2025-C-2": {
+    "date": "2025-10-19",
+    "venue": "臺北大巨蛋",
+    "away": "樂天桃猿",
+    "home": "中信兄弟",
+    "status": "FINISHED",
+    "awayScore": 2,
+    "homeScore": 1,
+    "gameType": "台灣大賽",
+    "seriesGame": 2,
+    "resultSource": "CPBL official"
+  },
+  "2025-C-3": {
+    "date": "2025-10-21",
+    "venue": "臺北大巨蛋",
+    "away": "中信兄弟",
+    "home": "樂天桃猿",
+    "status": "FINISHED",
+    "awayScore": 2,
+    "homeScore": 0,
+    "gameType": "台灣大賽",
+    "seriesGame": 3,
+    "resultSource": "CPBL official"
+  },
+  "2025-C-4": {
+    "date": "2025-10-26",
+    "venue": "樂天桃園",
+    "away": "中信兄弟",
+    "home": "樂天桃猿",
+    "status": "FINISHED",
+    "awayScore": 1,
+    "homeScore": 3,
+    "gameType": "台灣大賽",
+    "seriesGame": 4,
+    "resultSource": "CPBL official"
+  },
+  "2025-C-5": {
+    "date": "2025-10-27",
+    "venue": "洲際",
+    "away": "樂天桃猿",
+    "home": "中信兄弟",
+    "status": "FINISHED",
+    "awayScore": 9,
+    "homeScore": 7,
+    "gameType": "台灣大賽",
+    "seriesGame": 5,
+    "resultSource": "CPBL official"
+  }
+}
