@@ -1,4 +1,9 @@
-const KEY="ballpark-memories-v2";export function loadGames(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch{return[]}}export function saveGames(g){localStorage.setItem(KEY,JSON.stringify(g))}export function addMediaMeta(gameId,items){const games=loadGames(),g=games.find(x=>x.id===gameId);if(!g)return;g.media=[...(g.media||[]),...items];saveGames(games)}
+const KEY="ballpark-memories-v2",SHADOW_KEY="ballpark-memories-shadow-v1",STATE_KEY="ballpark-memories-state-v1";
+function parse(raw){try{const v=JSON.parse(raw||"[]");return Array.isArray(v)?v:[]}catch{return[]}}
+export function loadGames(){const primary=parse(localStorage.getItem(KEY)),shadow=parse(localStorage.getItem(SHADOW_KEY));if(primary.length)return primary;if(shadow.length){localStorage.setItem(KEY,JSON.stringify(shadow));return shadow}return primary}
+export function saveGames(g){if(!Array.isArray(g))return;const current=parse(localStorage.getItem(KEY));if(!g.length&&current.length){console.warn("Ballpark Memories: blocked accidental empty overwrite");return}const raw=JSON.stringify(g);localStorage.setItem(KEY,raw);if(g.length)localStorage.setItem(SHADOW_KEY,raw);localStorage.setItem(STATE_KEY,JSON.stringify({count:g.length,lastSavedAt:new Date().toISOString()}))}
+export function storageState(){try{return JSON.parse(localStorage.getItem(STATE_KEY)||"{}")}catch{return{}}}
+export function addMediaMeta(gameId,items){const games=loadGames(),g=games.find(x=>x.id===gameId);if(!g)return;g.media=[...(g.media||[]),...items];saveGames(games)}
 export function deleteMediaMeta(gameId,mediaId){const games=loadGames(),g=games.find(x=>x.id===gameId);if(!g)return;g.media=(g.media||[]).filter(m=>m.id!==mediaId);saveGames(games)}
 const MEDIA_DB="ballpark-media-v1",MEDIA_STORE="thumbs";
 function mediaDB(){return new Promise((resolve,reject)=>{const q=indexedDB.open(MEDIA_DB,1);q.onupgradeneeded=()=>{const d=q.result;if(!d.objectStoreNames.contains(MEDIA_STORE))d.createObjectStore(MEDIA_STORE)};q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)})}
