@@ -10,7 +10,15 @@
     "gameType": "季後挑戰賽",
     "seriesGame": 1,
     "resultSource": "CPBL official",
-    "mvp": "林佳緯"
+    "mvp": "林佳緯",
+    "winningPitcher": "獅帝芬",
+    "losingPitcher": "魔神樂",
+    "attendance": 13124,
+    "gameDurationMinutes": 164,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=1",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=1",
+    "savePitcher": "陳韻文"
   },
   "2025-E-2": {
     "date": "2025-10-11",
@@ -23,7 +31,14 @@
     "gameType": "季後挑戰賽",
     "seriesGame": 2,
     "resultSource": "CPBL official",
-    "mvp": "宋嘉翔"
+    "mvp": "宋嘉翔",
+    "winningPitcher": "朱承洋",
+    "losingPitcher": "鍾允華",
+    "attendance": 18000,
+    "gameDurationMinutes": 203,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=2",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=2"
   },
   "2025-E-3": {
     "date": "2025-10-12",
@@ -36,7 +51,14 @@
     "gameType": "季後挑戰賽",
     "seriesGame": 3,
     "resultSource": "CPBL official",
-    "mvp": "林子偉"
+    "mvp": "林子偉",
+    "winningPitcher": "黃子鵬",
+    "losingPitcher": "蒙德茲",
+    "attendance": 11102,
+    "gameDurationMinutes": 191,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=3",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=3"
   },
   "2025-E-4": {
     "date": "2025-10-13",
@@ -49,7 +71,14 @@
     "gameType": "季後挑戰賽",
     "seriesGame": 4,
     "resultSource": "CPBL official",
-    "mvp": "林智平"
+    "mvp": "林智平",
+    "winningPitcher": "威能帝",
+    "losingPitcher": "辛俊昇",
+    "attendance": 8258,
+    "gameDurationMinutes": 192,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=4",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=E&gameSno=4"
   },
   "2025-C-1": {
     "date": "2025-10-18",
@@ -62,7 +91,15 @@
     "gameType": "台灣大賽",
     "seriesGame": 1,
     "resultSource": "CPBL official",
-    "mvp": "魔神樂"
+    "mvp": "魔神樂",
+    "winningPitcher": "魔神樂",
+    "losingPitcher": "羅戈",
+    "attendance": 40000,
+    "gameDurationMinutes": 154,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=1",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=1",
+    "savePitcher": "朱承洋"
   },
   "2025-C-2": {
     "date": "2025-10-19",
@@ -75,7 +112,15 @@
     "gameType": "台灣大賽",
     "seriesGame": 2,
     "resultSource": "CPBL official",
-    "mvp": "威能帝"
+    "mvp": "威能帝",
+    "winningPitcher": "威能帝",
+    "losingPitcher": "李博登",
+    "attendance": 40000,
+    "gameDurationMinutes": 174,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=2",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=2",
+    "savePitcher": "朱承洋"
   },
   "2025-C-3": {
     "date": "2025-10-21",
@@ -88,7 +133,15 @@
     "gameType": "台灣大賽",
     "seriesGame": 3,
     "resultSource": "CPBL official",
-    "mvp": "韋禮加"
+    "mvp": "韋禮加",
+    "winningPitcher": "韋禮加",
+    "losingPitcher": "黃子鵬",
+    "attendance": 37088,
+    "gameDurationMinutes": 157,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=3",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=3",
+    "savePitcher": "李振昌"
   },
   "2025-C-4": {
     "date": "2025-10-26",
@@ -101,7 +154,15 @@
     "gameType": "台灣大賽",
     "seriesGame": 4,
     "resultSource": "CPBL official",
-    "mvp": "陳晨威"
+    "mvp": "陳晨威",
+    "winningPitcher": "陳冠宇",
+    "losingPitcher": "羅戈",
+    "attendance": 18000,
+    "gameDurationMinutes": 163,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=4",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=4",
+    "savePitcher": "朱承洋"
   },
   "2025-C-5": {
     "date": "2025-10-27",
@@ -114,6 +175,14 @@
     "gameType": "台灣大賽",
     "seriesGame": 5,
     "resultSource": "CPBL official",
-    "mvp": "林泓育"
+    "mvp": "林泓育",
+    "winningPitcher": "莊昕諺",
+    "losingPitcher": "鄭浩均",
+    "attendance": 18307,
+    "gameDurationMinutes": 245,
+    "resultSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=5",
+    "attendanceSource": "CPBL official",
+    "attendanceSourceUrl": "https://cpbl.com.tw/box/index?year=2025&kindCode=C&gameSno=5",
+    "savePitcher": "朱承洋"
   }
 }
