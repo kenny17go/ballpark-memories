@@ -132,3 +132,6 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 
 /* V1.0.2 backup restore */
 .story-backup .restore-backup{margin-top:12px;background:transparent;color:#183f2c;border:1px solid rgba(24,63,44,.22);font-size:14px;padding:11px 14px}
+
+/* V1.1.0 multi-season */
+.season-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.season-years{display:flex;gap:5px;padding:3px;background:rgba(24,63,44,.07);border-radius:999px}.season-year{border:0;background:transparent;color:#617066;font:700 12px/1 system-ui;padding:8px 10px;border-radius:999px;min-width:0}.season-year.active{background:#183f2c;color:#fff;box-shadow:0 2px 8px rgba(24,63,44,.18)}
