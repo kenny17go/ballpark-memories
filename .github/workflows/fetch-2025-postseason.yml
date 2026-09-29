@@ -40,7 +40,8 @@ jobs:
                   curt=json.loads(box.get("CurtGameDetailJson") or "{}") if box.get("Success") else {}
                   out[f"{prefix}-{sno}"]={
                     "schedule":{k:x.get(k) for k in ["GameDate","GameDateTimeS","GameDateTimeE","FieldAbbe","VisitingTeamName","HomeTeamName","VisitingScore","HomeScore","GameDuringTime","WinningPitcherName","LoserPitcherName","MvpName"]},
-                    "box":{k:curt.get(k) for k in ["AudienceCntBackend","AudienceCnt","CloserPitcherName","WinningPitcherName","LoserPitcherName","MvpName","GameDuringTime"]}
+                    "box":{k:curt.get(k) for k in ["AudienceCntBackend","AudienceCnt","CloserPitcherName","WinningPitcherName","LoserPitcherName","MvpName","GameDuringTime"]},
+                    "responsePitcherFields":{k:v for k,v in box.items() if "pitch" in k.lower() or "score" in k.lower()}
                   }
           open("data/postseason-official-2025.tmp.json","w").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
           PY
