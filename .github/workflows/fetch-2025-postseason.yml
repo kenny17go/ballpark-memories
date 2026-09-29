@@ -34,11 +34,8 @@ jobs:
               return json.loads(raw)
           out={}
           for kind,prefix,count in [("E","2025-E",4),("C","2025-C",5)]:
-              sched=post("/schedule/getgamedatas",{"calendar":"2025/10/01","location":"","kindCode":kind})
-              games=json.loads(sched.get("GameDatas") or "[]") if sched.get("Success") else []
-              by={int(x["GameSno"]):x for x in games if str(x.get("GameSno","")).isdigit()}
               for sno in range(1,count+1):
-                  x=by.get(sno,{})
+                  x={}
                   box=post("/box/getlive",{"GameSno":str(sno),"KindCode":kind,"Year":"2025","PrevOrNext":"","PresentStatus":""})
                   curt=json.loads(box.get("CurtGameDetailJson") or "{}") if box.get("Success") else {}
                   out[f"{prefix}-{sno}"]={
