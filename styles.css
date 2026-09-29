@@ -152,3 +152,8 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 
 /* V1.4.2 first-use restore */
 .first-use-restore{margin:-12px 4px 26px;padding:16px;border-radius:18px;background:#fff;display:grid;gap:7px}.first-use-restore[hidden]{display:none}.first-use-restore b{font-size:14px;color:#183f2c}.first-use-restore span{font-size:11px;line-height:1.45;color:#788078}.first-use-restore button{margin-top:4px;border:0;border-radius:13px;padding:11px 14px;background:#183f2c;color:#fff;font:inherit;font-size:12px;font-weight:800}
+
+/* V1.5.0 optional memory note */
+.moment-note{display:block;width:100%;margin:10px 0 0;padding:7px 2px;border:0;background:transparent;text-align:left;color:#8b8e88;font:inherit;font-size:11px}
+.moment-note small{font-size:9px;opacity:.65}
+.moment-note.saved{padding:10px 12px;border-radius:13px;background:#f6f3eb;color:#39453d;font-size:13px;line-height:1.5;font-weight:650}
