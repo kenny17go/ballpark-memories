@@ -157,3 +157,12 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 .moment-note{display:block;width:100%;margin:10px 0 0;padding:7px 2px;border:0;background:transparent;text-align:left;color:#8b8e88;font:inherit;font-size:11px}
 .moment-note small{font-size:9px;opacity:.65}
 .moment-note.saved{padding:10px 12px;border-radius:13px;background:#f6f3eb;color:#39453d;font-size:13px;line-height:1.5;font-weight:650}
+
+/* V1.5.1 memory-first Game Story */
+.memory-cover{margin:0 0 24px;padding:20px 18px;border-radius:24px;background:var(--team-bg);color:var(--team-fg)}
+.memory-cover span{color:inherit;opacity:.72}
+.memory-cover h3{margin:7px 0 5px;font-size:29px;line-height:1.08}
+.memory-cover>b{display:block;font-size:13px;opacity:.9}
+.memory-cover .memory-byline{margin:13px 0 0;color:inherit;font-size:12px;font-weight:750;opacity:.92}
+.memory-cover .memory-summary{margin:6px 0 0;color:inherit;font-size:10px;opacity:.62}
+.book-final span{display:block;margin-top:4px}
