@@ -10,7 +10,7 @@ def req(url,data=None,headers=None):
  with opener.open(urllib.request.Request(url,data=body,headers=h),timeout=30) as r:return r.read().decode("utf-8","ignore")
 html=req(BASE+"/schedule?KindCode=A"); m=re.search(r'name="__RequestVerificationToken"[^>]*value="([^"]+)"',html)
 if not m: raise RuntimeError("CPBL CSRF token not found")
-token=m.group(1); raw=req(BASE+"/schedule/getgamedatas",{"calendar":f"{YEAR}/01/01","location":"","kindCode":"A"},{"X-Requested-With":"XMLHttpRequest","RequestVerificationToken":token,"Referer":BASE+"/schedule?KindCode=A"})
+token=m.group(1); raw=req(BASE+"/schedule/getgamedatas",{"calendar":f"{YEAR}/01/01","location":"","kindCode":"A"},{"Content-Type":"application/x-www-form-urlencoded","X-Requested-With":"XMLHttpRequest","RequestVerificationToken":token,"Referer":BASE+"/schedule?KindCode=A"})
 payload=json.loads(raw)
 if not payload.get("Success"): raise RuntimeError("CPBL API Success=false")
 rows=json.loads(payload.get("GameDatas") or "[]"); by={}
