@@ -1,1 +1,23 @@
-{"name":"Ballpark Memories","short_name":"Ballpark","start_url":"./","display":"standalone","background_color":"#f5f2e9","theme_color":"#183f2c","description":"Local-first CPBL game memories and Game Stories.","icons":[{"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "Ballpark Memories",
+  "short_name": "Ballpark",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f2e9",
+  "theme_color": "#183f2c",
+  "description": "Local-first CPBL game memories and Game Stories.",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
