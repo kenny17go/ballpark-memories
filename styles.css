@@ -135,3 +135,6 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 
 /* V1.1.0 multi-season */
 .season-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.season-years{display:flex;gap:5px;padding:3px;background:rgba(24,63,44,.07);border-radius:999px}.season-year{border:0;background:transparent;color:#617066;font:700 12px/1 system-ui;padding:8px 10px;border-radius:999px;min-width:0}.season-year.active{background:#183f2c;color:#fff;box-shadow:0 2px 8px rgba(24,63,44,.18)}
+
+/* V1.2.0 historical entry */
+.season-title>div:last-child{display:flex;flex-direction:column;align-items:flex-end;gap:7px}.add-season-game{border:0;background:transparent;color:#183f2c;font:700 12px/1 system-ui;padding:3px 4px}.add-season-game:active{opacity:.55}
