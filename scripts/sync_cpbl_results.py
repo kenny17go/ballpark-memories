@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-import json,re,urllib.request,urllib.parse,http.cookiejar
+import json,re,sys,urllib.request,urllib.parse,http.cookiejar
 from datetime import date
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-SCHEDULE=ROOT/"data/schedule-2026.json"
-RESULTS=ROOT/"data/results-2026.json"
+YEAR=int(sys.argv[1]) if len(sys.argv)>1 else date.today().year
+if YEAR not in (2025,2026): raise RuntimeError(f"unsupported year: {YEAR}")
+SCHEDULE=ROOT/f"data/schedule-{YEAR}.json"
+RESULTS=ROOT/f"data/results-{YEAR}.json"
 BASE="https://cpbl.com.tw"
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Ballpark-Memories/1.0"
 opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
@@ -74,15 +76,15 @@ results=json.loads(RESULTS.read_text(encoding="utf-8")) if RESULTS.exists() else
 today=date.today()
 today_iso=today.isoformat()
 # Keep a complete season result cache so old attended games can be added later.
-candidates=[g for g in schedule if str(g.get("id","")).startswith("2026-A-")
-            and g.get("date","")<=today_iso]
+candidates=[g for g in schedule if str(g.get("id","")).startswith(f"{YEAR}-A-")
+            and (YEAR<today.year or g.get("date","")<=today_iso)]
 if len(candidates)>400:
     raise RuntimeError(f"safety stop: unexpected season candidate count of {len(candidates)} games")
 print(f"checking {len(candidates)} season games through {today_iso}")
 
 token=csrf()
 payload=api_post("/schedule/getgamedatas",{
-    "calendar":f"{today.year}/01/01","location":"","kindCode":"A"
+    "calendar":f"{YEAR}/01/01","location":"","kindCode":"A"
 },token)
 if not payload.get("Success"):
     raise RuntimeError("CPBL schedule API returned Success=false")
@@ -114,7 +116,7 @@ for g in candidates:
     row.update({
         "date":g.get("date"),"venue":g.get("venue"),"away":g.get("away"),"home":g.get("home"),
         "status":"FINISHED","awayScore":int(away_score),"homeScore":int(home_score),
-        "resultSource":"CPBL official","resultSourceUrl":f"{BASE}/box/index?year={today.year}&kindCode=A&gameSno={sno}"
+        "resultSource":"CPBL official","resultSourceUrl":f"{BASE}/box/index?year={YEAR}&kindCode=A&gameSno={sno}"
     })
     mapping={"MvpName":"mvp","WinningPitcherName":"winningPitcher","LoserPitcherName":"losingPitcher"}
     for src,dst in mapping.items():
@@ -125,7 +127,7 @@ for g in candidates:
 
     # Official box endpoint is the preferred attendance source.
     try:
-        box=api_post("/box/getlive",{"GameSno":str(sno),"KindCode":"A","Year":str(today.year),
+        box=api_post("/box/getlive",{"GameSno":str(sno),"KindCode":"A","Year":str(YEAR),
              "PrevOrNext":"","PresentStatus":""},token)
         curt=json.loads(box.get("CurtGameDetailJson") or "{}") if box.get("Success") else {}
         # Schedule CloserName can mean the last pitcher, not a credited save.
