@@ -10,8 +10,8 @@ aliases={"統一獅":"統一7-ELEVEn獅","統一7-ELEVEN獅":"統一7-ELEVEn獅"
 def clean(s): return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",s))).strip()
 def team(s): return aliases.get(s.strip(),s.strip())
 def fetch(page):
- q=urllib.parse.urlencode({"page":page,"pagesize":100})
- req=urllib.request.Request(BASE+"?"+q,headers={"User-Agent":"Mozilla/5.0 Ballpark-Memories/1.0"})
+ data=urllib.parse.urlencode({"pagesize":400,"page":page}).encode()
+ req=urllib.request.Request(BASE,data=data,headers={"User-Agent":"Mozilla/5.0 Ballpark-Memories/1.0","Content-Type":"application/x-www-form-urlencoded"})
  with urllib.request.urlopen(req,timeout=30) as r:
   b=r.read()
   for enc in ("utf-8","big5","cp950"):
@@ -19,7 +19,7 @@ def fetch(page):
    except UnicodeDecodeError: pass
   return b.decode("big5","ignore")
 by={}
-for page in range(1,8):
+for page in range(1,3):
  raw=fetch(page)
  rows=re.findall(r"<tr\b[^>]*>(.*?)</tr>",raw,re.I|re.S)
  for row in rows:
