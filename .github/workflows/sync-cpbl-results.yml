@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install historical schedule parser
+        run: pip install pdfplumber
       - name: Build official 2025 schedule
         run: python scripts/build_cpbl_schedule.py 2025
       - name: Sync official 2025 results
