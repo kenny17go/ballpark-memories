@@ -9,7 +9,8 @@
     "homeScore": 2,
     "gameType": "季後挑戰賽",
     "seriesGame": 1,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "林佳緯"
   },
   "2025-E-2": {
     "date": "2025-10-11",
@@ -21,7 +22,8 @@
     "homeScore": 7,
     "gameType": "季後挑戰賽",
     "seriesGame": 2,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "宋嘉翔"
   },
   "2025-E-3": {
     "date": "2025-10-12",
@@ -33,7 +35,8 @@
     "homeScore": 3,
     "gameType": "季後挑戰賽",
     "seriesGame": 3,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "林子偉"
   },
   "2025-E-4": {
     "date": "2025-10-13",
@@ -45,7 +48,8 @@
     "homeScore": 3,
     "gameType": "季後挑戰賽",
     "seriesGame": 4,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "林智平"
   },
   "2025-C-1": {
     "date": "2025-10-18",
@@ -57,7 +61,8 @@
     "homeScore": 0,
     "gameType": "台灣大賽",
     "seriesGame": 1,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "魔神樂"
   },
   "2025-C-2": {
     "date": "2025-10-19",
@@ -69,7 +74,8 @@
     "homeScore": 1,
     "gameType": "台灣大賽",
     "seriesGame": 2,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "威能帝"
   },
   "2025-C-3": {
     "date": "2025-10-21",
@@ -81,7 +87,8 @@
     "homeScore": 0,
     "gameType": "台灣大賽",
     "seriesGame": 3,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "韋禮加"
   },
   "2025-C-4": {
     "date": "2025-10-26",
@@ -93,10 +100,11 @@
     "homeScore": 3,
     "gameType": "台灣大賽",
     "seriesGame": 4,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "陳晨威"
   },
   "2025-C-5": {
-    "date": "2025-10-28",
+    "date": "2025-10-27",
     "venue": "洲際",
     "away": "樂天桃猿",
     "home": "中信兄弟",
@@ -105,6 +113,7 @@
     "homeScore": 7,
     "gameType": "台灣大賽",
     "seriesGame": 5,
-    "resultSource": "CPBL official"
+    "resultSource": "CPBL official",
+    "mvp": "林泓育"
   }
 }
