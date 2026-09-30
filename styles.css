@@ -182,3 +182,6 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 
 /* V1.5.9 backup choices */
 .story-backup .full-backup{margin-top:14px;background:#355f4b}.story-backup .full-backup+small{margin-bottom:0}.story-backup .restore-backup{margin-top:14px}
+
+/* V1.6.0 memory moment */
+.memory-moment{position:relative;display:flex;min-height:190px;margin:16px 0 18px;padding:20px;border-radius:24px;background-position:center;background-size:cover;color:#fff;overflow:hidden;box-shadow:0 10px 30px rgba(20,38,29,.12);cursor:pointer}.memory-moment[hidden]{display:none}.memory-moment>span{position:absolute;top:16px;left:16px;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.32);backdrop-filter:blur(10px);font-size:12px;font-weight:800;letter-spacing:.08em}.memory-moment>div{align-self:flex-end;display:flex;flex-direction:column;align-items:flex-start;text-shadow:0 1px 8px rgba(0,0,0,.4)}.memory-moment small{font-size:12px;opacity:.9}.memory-moment b{margin-top:4px;font-size:21px;line-height:1.2}.memory-moment em{margin-top:10px;font-size:13px;font-style:normal;font-weight:800}
