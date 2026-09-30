@@ -175,7 +175,7 @@ button,.media-btn{-webkit-tap-highlight-color:transparent;touch-action:manipulat
 .book-final{position:relative;padding-right:72px}
 .book-final-delete{position:absolute;right:16px;bottom:16px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.18);color:var(--team-fg);font-size:18px;line-height:38px;text-align:center}
 
-/* V1.5.4 game list sorting */
+/* V1.5.5 game list sorting */
 .game-list-tools{display:flex;align-items:center;justify-content:space-between;margin:4px 4px 10px;padding:0 4px}
 .game-list-tools b{font-size:13px;color:#314238}
-.game-list-tools button{border:0;border-radius:999px;padding:8px 11px;background:#fff;color:#183f2c;font:inherit;font-size:11px;font-weight:850;box-shadow:0 1px 5px rgba(20,35,27,.05)}
+.game-sort-control{display:flex;align-items:center;gap:6px}.game-sort-control span{font-size:9px;font-weight:800;color:#7b847e}.game-sort-control select{max-width:170px;border:0;border-radius:999px;padding:8px 28px 8px 11px;background:#fff;color:#183f2c;font:inherit;font-size:11px;font-weight:850;box-shadow:0 1px 5px rgba(20,35,27,.05)}@media(max-width:390px){.game-sort-control span{display:none}.game-sort-control select{max-width:160px}}
