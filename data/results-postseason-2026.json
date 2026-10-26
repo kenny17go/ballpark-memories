@@ -81,7 +81,8 @@
     "losingPitcher": "勝騎士",
     "savePitcher": "林凱威",
     "resultSource": "CPBL official",
-    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-1"
+    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-1",
+    "attendance": 40000
   },
   "2026-C-2": {
     "date": "2026-10-18",
@@ -98,7 +99,8 @@
     "losingPitcher": "菲力士",
     "savePitcher": "林凱威",
     "resultSource": "CPBL official",
-    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-2"
+    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-2",
+    "attendance": 39568
   },
   "2026-C-3": {
     "date": "2026-10-20",
@@ -112,7 +114,8 @@
     "seriesGame": 3,
     "mvp": "鋼龍",
     "resultSource": "CPBL official",
-    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-3"
+    "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-3",
+    "attendance": 32869
   },
   "2026-C-4": {
     "date": "2026-10-21",
@@ -126,7 +129,8 @@
     "seriesGame": 4,
     "mvp": "詹子賢",
     "resultSource": "news verified",
-    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games"
+    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games",
+    "attendance": 40000
   },
   "2026-C-5": {
     "date": "2026-10-25",
@@ -140,7 +144,8 @@
     "seriesGame": 5,
     "mvp": "江坤宇",
     "resultSource": "news verified",
-    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games"
+    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games",
+    "attendance": 40000
   },
   "2026-C-6": {
     "date": "2026-10-26",
