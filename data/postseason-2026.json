@@ -72,7 +72,8 @@
     "gameType": "台灣大賽",
     "seriesGame": 1,
     "source": "CPBL official",
-    "mvp": "蔣銲"
+    "mvp": "蔣銲",
+    "attendance": 40000
   },
   {
     "id": "2026-C-2",
@@ -87,7 +88,8 @@
     "gameType": "台灣大賽",
     "seriesGame": 2,
     "source": "CPBL official",
-    "mvp": "曾聖安"
+    "mvp": "曾聖安",
+    "attendance": 39568
   },
   {
     "id": "2026-C-3",
@@ -102,7 +104,8 @@
     "gameType": "台灣大賽",
     "seriesGame": 3,
     "source": "CPBL official",
-    "mvp": "鋼龍"
+    "mvp": "鋼龍",
+    "attendance": 32869
   },
   {
     "id": "2026-C-4",
@@ -117,7 +120,8 @@
     "source": "CPBL official",
     "awayScore": 4,
     "homeScore": 5,
-    "mvp": "詹子賢"
+    "mvp": "詹子賢",
+    "attendance": 40000
   },
   {
     "id": "2026-C-5",
@@ -133,7 +137,8 @@
     "ifNecessary": true,
     "awayScore": 4,
     "homeScore": 3,
-    "mvp": "江坤宇"
+    "mvp": "江坤宇",
+    "attendance": 40000
   },
   {
     "id": "2026-C-6",
@@ -152,6 +157,7 @@
     "mvp": "梅賽鍶",
     "champion": "味全龍",
     "seriesResult": "4-2",
-    "seriesMvp": "梅賽鍶"
+    "seriesMvp": "梅賽鍶",
+    "attendance": 38178
   }
 ]
