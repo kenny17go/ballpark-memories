@@ -113,5 +113,53 @@
     "mvp": "鋼龍",
     "resultSource": "CPBL official",
     "resultSourceUrl": "https://stats.cpbl.com.tw/schedule/2026-C-3"
+  },
+  "2026-C-4": {
+    "date": "2026-10-21",
+    "venue": "大巨蛋",
+    "away": "味全龍",
+    "home": "中信兄弟",
+    "status": "FINISHED",
+    "awayScore": 4,
+    "homeScore": 5,
+    "gameType": "台灣大賽",
+    "seriesGame": 4,
+    "mvp": "詹子賢",
+    "resultSource": "news verified",
+    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games"
+  },
+  "2026-C-5": {
+    "date": "2026-10-25",
+    "venue": "大巨蛋",
+    "away": "中信兄弟",
+    "home": "味全龍",
+    "status": "FINISHED",
+    "awayScore": 4,
+    "homeScore": 3,
+    "gameType": "台灣大賽",
+    "seriesGame": 5,
+    "mvp": "江坤宇",
+    "resultSource": "news verified",
+    "resultSourceUrl": "https://cpbl.ruan-ruan.com/games"
+  },
+  "2026-C-6": {
+    "date": "2026-10-26",
+    "venue": "大巨蛋",
+    "away": "中信兄弟",
+    "home": "味全龍",
+    "status": "FINISHED",
+    "awayScore": 0,
+    "homeScore": 6,
+    "gameType": "台灣大賽",
+    "seriesGame": 6,
+    "mvp": "梅賽鍶",
+    "resultSource": "news verified",
+    "winningPitcher": "梅賽鍶",
+    "losingPitcher": "勝騎士",
+    "attendance": 38178,
+    "champion": "味全龍",
+    "seriesResult": "4-2",
+    "seriesMvp": "梅賽鍶",
+    "resultSourceUrl": "https://www.cna.com.tw/news/aspt/202610260191.aspx"
   }
 }
